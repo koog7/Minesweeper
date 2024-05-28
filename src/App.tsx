@@ -1,4 +1,4 @@
-import './App.css'
+import './App.css';
 import CellField from "./Components/CellField.tsx";
 
 
@@ -9,7 +9,7 @@ const App = () => {
       <>
         <CellField />
       </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

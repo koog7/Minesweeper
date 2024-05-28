@@ -15,7 +15,7 @@ const generateCells = (): CellState[] => {
     const randomIndex = Math.floor(Math.random() * 36);
     cells[randomIndex] = { ...cells[randomIndex], hasItem: true };
     return cells;
-}
+};
 
 const CellField: React.FC = () => {
     const [cells, setCells] = useState<CellState[]>(generateCells());
@@ -37,13 +37,13 @@ const CellField: React.FC = () => {
             }
             return newCells;
         });
-    }
+    };
 
     const resetGame = () => {
         const newCells = generateCells();
         setCells(newCells);
         setCount(0);
-    }
+    };
 
     return (
         <div>
@@ -62,6 +62,6 @@ const CellField: React.FC = () => {
             <ResetButton onReset={resetGame} />
         </div>
     );
-}
+};
 
 export default CellField;

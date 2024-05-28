@@ -28,6 +28,6 @@ const Cell: React.FC<CellProps> = ({ id, onClick, isTouched, hasItem }) => {
             }}
         />
     );
-}
+};
 
 export default Cell;
