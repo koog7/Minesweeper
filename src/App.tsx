@@ -1,12 +1,14 @@
 import './App.css'
+import CellField from "./Components/CellField.tsx";
 
-function App() {
+
+const App = () => {
 
 
   return (
-    <>
-
-    </>
+      <>
+        <CellField />
+      </>
   )
 }
 
